@@ -1,0 +1,245 @@
+/* تنسيق عام للجسم */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* تنسيق الهيدر لتقليل الارتفاع */
+#header {
+    padding: 5px 0;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header nav ul li {
+    margin: 0 10px;
+}
+
+#header nav ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+#header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* تنسيق قسم الهبوط وتكبير الصورة الأولى */
+#landing {
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* تكبير عرض الصورة الأولى لتملأ عرض الشاشة بالكامل */
+#landing .slideshow-container .mySlides:first-child img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* تنسيق النص فوق الصورة */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* تنسيق بطاقات المشاريع */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.cta-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* تنسيق قسم التواصل */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* تنسيق نموذج التواصل */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* تنسيق الحقول النصية */
+#contactForm label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* تأثير التفاعل على الحقول */
+#contactForm input[type="text"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* تنسيق زر الإرسال */
+#contactForm button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+    background-color: #e6b800;
+}
+
+
+/* تنسيق القسم السفلي والحقوق */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
